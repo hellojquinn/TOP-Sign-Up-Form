@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.image{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/596595714c8b0390421c11a6/1569460007992-RDCC6CHE6NRKC8S0FOKI/Zebra-finch-landing-on-a-branch.jpg);
+    background-position: center;
+    background-size: auto;
+    width: 60vw;
+    transform: scaleX(-1);
+}
+
+
+
+.logo{
+    position: absolute;
+    height: 18vh;
+    top: 25vh;
+    left: 34vw;
+}
