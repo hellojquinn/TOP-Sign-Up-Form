@@ -5,14 +5,9 @@
 }
 
 .content {
+    display: flex;
     width: 100vw;
     height: 100vh;
-}
-
-.content,
-.logo{
-    display: flex;
-    flex-flow: row wrap;
 }
 
 
@@ -20,15 +15,74 @@
     background-image: url(https://images.squarespace-cdn.com/content/v1/596595714c8b0390421c11a6/1569460007992-RDCC6CHE6NRKC8S0FOKI/Zebra-finch-landing-on-a-branch.jpg);
     background-position: center;
     background-size: auto;
-    width: 60vw;
+    width: 70vw;
     transform: scaleX(-1);
 }
 
-
-
 .logo{
     position: absolute;
-    height: 18vh;
-    top: 25vh;
-    left: 34vw;
+    height: 30vh;
+    padding: 25px;
+    margin-top: 140px;
+    transform: scaleX(-1);
+}
+
+.right {
+    width: 30vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: #0e0a06;
+    color: white;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-text{
+    width: 80%;
+    font-size: 1.2rem;
+    margin-left: 2.5vw;
+}
+
+.signup-prompt {
+    margin-left: 2.5vw;
+    padding-top: 25px;
+}
+
+.get-started {
+    padding-top: 25px;
+    margin-left: 2.5vw;
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    margin-left: 2.5vw;
+    width: 25vw;
+    padding-top: 25px;
+}
+
+
+.form-title{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.create-button {
+    margin-top: 25px;
+    margin-left: 2.5vw;
+    height: 40px;
+    width: 144px;
+    font-size: 16px;
+}
+
+.existing-acc {
+    padding-top: 8px;
+    margin-left: 2.5vw;
+    font-size: 0.8rem;
+}
+
+.log-in {
+    text-decoration: underline;
 }
