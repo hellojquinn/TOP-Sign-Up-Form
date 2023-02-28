@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite">
+    <script src="script.js" defer></script>
     <title>Magic Birds Sign Up</title>
 </head>
 <body>
@@ -35,44 +37,51 @@
 
         <div class="input">
             <label for="first_name">First Name:<br></label>
-            <input type="text" id="first-name" placeholder="Geralt..">
+            <input type="text" name="first-name" id="first-name" placeholder="Geralt.." minlength="2" maxlength="30" required>
+            <div id="first-name-error" class="error"></div>
         </div>
 
         <div class="input">
             <label for="last_name">Last Name:<br></label>
-            <input type="text" id="last-name" placeholder="Of Rivia..">
+            <input type="text" name="last-name" id="last-name" placeholder="Of Rivia.." minlength="2" maxlength="30" required>
+            <div id="last-name-error" class="error"></div>
         </div>
 
         <div class="input">
             <label for="user_email">Email Address:<br></label>
-            <input type="email" id="email-address" placeholder="geralt@rivianet.com">
+            <input type="email" name="email" id="email-address" placeholder="geralt@rivianet.com" required>
+            <div id="email-error" class="error"></div>
         </div>
 
         <div class="input">
             <label for="phone_number">Phone Number:<br></label>
-            <input type="number" id="phone-number" placeholder="555-555..">
+            <input type="tel" name="phone-number" id="phone-number" placeholder="555-555" pattern="[0-9]{10}" required>
+            <div id="tel-error" class="error"></div>
         </div>
 
         <div class="input">
             <label for="password">Password:<br></label>
-            <input type="password" id="password" placeholder="shhhh..">
+            <input type="password" name="password" id="password" placeholder="shhhh.." required>
+            <div id="password-error" class="error"></div>
         </div>
+<!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" -->
 
         <div class="input">
             <label for="password">Confirm Password:<br></label>
-            <input type="password" id="password" placeholder="Double shh..">
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Double shh.." required>
+            <div id="confirm-password-error" class="error"></div>
         </div>
 
         
 
     </div>
 
-    <button class="create-button">Create Account</button>
+    <button class="create-button" type="submit">Create Account</button>
 </form>
 
     <p class="existing-acc">Already have an account? <span class="log-in">Log in</span></p>
 </div>
-
+</div>
 
 </div>
 
