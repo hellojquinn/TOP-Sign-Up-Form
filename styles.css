@@ -38,6 +38,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (min-width: 1800px) {
+/* background image wouldn't stretch on screens larger than 1800px and so was repeating. This makes the form side large to compensate */
+    .right {
+        width: 70vw;
+    }
+}
+
 .signup-text{
     width: 80%;
     font-size: 1.4rem;
@@ -89,7 +96,18 @@ input:focus {
     margin-left: 2.5vw;
     height: 40px;
     width: 144px;
-    font-size: 16px;
+    font-size: 17px;
+    background-color: #dd7301;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.create-button:active {
+    background-color: #0e0a06;
+    transform: translateY(1px);
 }
 
 .existing-acc {
@@ -100,9 +118,14 @@ input:focus {
 
 .log-in {
     text-decoration: underline;
+    color: #dd7301;
+    cursor: pointer;
 }
 
 .error {
-    font-size: .8rem;
+    font-size: .6em;
     color: #dd7301;
+    position: absolute;
+    padding-top: 5px;
   } 
+

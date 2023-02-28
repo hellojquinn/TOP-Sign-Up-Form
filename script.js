@@ -33,16 +33,14 @@ emailInput.addEventListener("input", () => {
   });
   
 
-  //phone number error
+//phone number error
 
-  // get reference to the phone number input field and error message element
 const phoneInput = document.getElementById("phone-number");
 const phoneError = document.getElementById("tel-error");
 
-// add event listener to the phone number input field to check validity on input change
 phoneInput.addEventListener("input", () => {
   const phoneNumber = phoneInput.value;
-  const phoneNumberPattern = /^\d{10}$/; // check for 10 digits only
+  const phoneNumberPattern = /^\d{10}$/;
   const isValidPhoneNumber = phoneNumberPattern.test(phoneNumber);
   if (!isValidPhoneNumber) {
     phoneError.textContent = "Please enter a valid phone number (10 digits)";
@@ -50,3 +48,4 @@ phoneInput.addEventListener("input", () => {
     phoneError.textContent = "";
   }
 });
+
